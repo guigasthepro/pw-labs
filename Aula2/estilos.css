@@ -1,0 +1,21 @@
+*{
+    font-family: Roboto, serif;
+}
+
+body{
+    background-color: rgb(191, 184, 184);
+}
+
+.nav{
+    float:none;
+
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border: 1%;
+    border-radius: 2%;
+    box-shadow: inset;
+}
