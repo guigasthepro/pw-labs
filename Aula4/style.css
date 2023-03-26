@@ -1,0 +1,86 @@
+*{
+    font-family: Roboto, serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    height: 100vh;
+    background-image: url('imagens/londres.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+  }
+  
+  .about {
+    padding: 2rem;
+  }
+  
+  .contact {
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    nav li {
+      display: block;
+      margin: 1rem 0;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.5rem;
+    }
+  
+    .about, .contact {
+      padding: 1rem;
+    }
+  
+  }
+
+  
+  
+  
