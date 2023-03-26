@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>London Video Background</title>
+	<style>
+		video {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -1;
+			background-size: cover;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 20px;
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<video autoplay muted loop>
+		<source src="londres.mp4" type="video/mp4">
+	</video>
+	<div class="overlay">
+		<h1>Welcome to London</h1>
+		<p>Explore the sights and sounds of one of the world's most vibrant cities.</p>
+	</div>
+</body>
+</html>

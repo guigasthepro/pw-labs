@@ -1,18 +1,9 @@
-*{
-    font-family: Roboto, serif;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-/* Configurações gerais */
 body {
 margin: 0;
 padding: 0;
 font-family: Arial, sans-serif;
 height: 2000px;
 }
-/* Imagens de fundo */
 .bg {
 background-image: url("https://picsum.photos/id/237/2000/1000"),
                     url("https://picsum.photos/id/1062/2000/1000"),
@@ -27,7 +18,31 @@ top: 0;
 left: 0;
 z-index: -1;
 }
-/* Conteúdo */
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
 .content {
 position: relative;
 top: 50%;
@@ -37,7 +52,6 @@ color: #fff;
 font-size: 3rem;
 font-weight: bold;
 }
-/* Efeito de parallax */
 .parallax {
 perspective: 1px;
 height: 100vh;
