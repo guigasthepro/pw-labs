@@ -5,38 +5,45 @@
     padding: 0px;
 }
 
-section {
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+/* Configurações gerais */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+height: 2000px;
 }
-
-.section1 {
-background-color: #fff;
-color: #000;
-}
-
-.section2 {
-background-color: #000;
-color: #fff;
-}
-
-.section3 {
-background-color: #fff;
-color: #000;
-}
-
-.section4 {
-background-color: #000;
-color: #fff;
-}
-
-/* Efeitos Parallax */
-.parallax1 {
-background-image: url('imagens/foto1.jpg');
-background-attachment: fixed;
+/* Imagens de fundo */
+.bg {
+background-image: url("https://picsum.photos/id/237/2000/1000"),
+                    url("https://picsum.photos/id/1062/2000/1000"),
+                    url("https://picsum.photos/id/1004/2000/1000");
+background-size: cover;
 background-position: center;
-background
+background-attachment: fixed;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+/* Conteúdo */
+.content {
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+color: #fff;
+font-size: 3rem;
+font-weight: bold;
+}
+/* Efeito de parallax */
+.parallax {
+perspective: 1px;
+height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+}
+.parallax > .bg {
+transform: translateZ(-1px) scale(2);
 }
