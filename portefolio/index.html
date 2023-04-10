@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Portefólio - Guilherme simão</title>
+    <script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#">Landing Page</a></li>
+              <li><a href="#">Sobre mim</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Licenciatura</a>
+                <div class="dropdown-content">
+                  <a href="#">Cadeiras</a>
+                  <a href="#">Educação</a>
+                  <a href="#">Escolas</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Aptidões e competências pessoais</a>
+                <div class="dropdown-content">
+                  <a href="#">Técnicas</a>
+                  <a href="#">Organizativas</a>
+                  <a href="#">Sociais</a>
+                  <a href="#">Linguísticas</a>
+                </div>
+              </li>
+              <li><a href="#">Interesses e hobbies</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Experiência profissional</a>
+                <div class="dropdown-content">
+                  <a href="#">Projetos realizados em diversas UCs</a>
+                  <a href="#">Projetos realizados por mim</a>
+                  <a href="#">Projetos de fim de curso realizados que achei interessantes</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Programação Web</a>
+                <div class="dropdown-content">
+                  <a href="#">Tecnologias existentes</a>
+                  <a href="#">Front-end</a>
+                  <a href="#">Back-end</a>
+                  <a href="#">Laboratórios</a>
+                </div>
+              </li>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Sobre este website</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><button id="dark-mode"><i class="fas fa-sun"></i></button></li>
+            </ul>
+          </nav>
+          
+
+
+    </header>
+
+    <div class="video-background">
+        <div class="video-foreground">
+            <video autoplay muted loop>
+                <source src="videos/background.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <p>Hoje é <span id="data-atual"></span>.</p>
+
+
+    <div class="motivational-text">
+        <p>"Aprender é uma jornada interminável. Mantenha-se curioso e nunca pare de explorar."</p>
+    </div>
+
+    <article>
+        <h1>Sua Carta de Apresentação</h1>
+        <p>Olá! Meu nome é <span id="name"></span> e sou estudante de [seu curso]. Escolhi este curso porque [suas motivações para escolher o curso]. Até agora, o que mais tenho gostado de aprender no curso é [o que você mais gosta de aprender no curso]. Alguns dos meus pontos fortes incluem [suas qualidades]. Quando terminar o curso, gostaria de [suas expectativas para o futuro]. Nos meus tempos livres, gosto de [seus hobbies].</p>
+    </article>
+
+    <section>
+        <input id="expressao" type="text" placeholder="Insira uma expressão aritmética">
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="apagar()">Apagar resultado</button>
+        <p>Resultado: <span id="resultado"></span></p>
+    </section>
+
+    <div>
+        <img src="caminho/para/imagem.jpg" alt="Imagem inspiradora">
+        <input id="frase-inspiradora" type="text" placeholder="Escreva uma frase inspiradora">
+    </div>
+
+    <footer>
+        <p id="date"></p>
+        <p>Feito por <span id="name-footer"></span></p>
+    </footer>
+</body>
+</html>
