@@ -1,25 +1,104 @@
-<html>
-  <head>
-    <title>London </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="author" content="Guilherme Simão">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-  </head>
-  <body>
+    <title>Portefólio - Guilherme simão</title>
+    <script src="main.js"></script>
+</head>
+<body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="paralax.html">Paralax</a></li>
-          <li><a href="video.html">Video</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+              <li><a href="#">Landing Page</a></li>
+              <li><a href="#">Sobre mim</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Licenciatura</a>
+                <div class="dropdown-content">
+                  <a href="#">Cadeiras</a>
+                  <a href="#">Educação</a>
+                  <a href="#">Escolas</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Aptidões e competências pessoais</a>
+                <div class="dropdown-content">
+                  <a href="#">Técnicas</a>
+                  <a href="#">Organizativas</a>
+                  <a href="#">Sociais</a>
+                  <a href="#">Linguísticas</a>
+                </div>
+              </li>
+              <li><a href="#">Interesses e hobbies</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Experiência profissional</a>
+                <div class="dropdown-content">
+                  <a href="./projeto/projetosescola.html">Projetos realizados em diversas UCs</a>
+                  
+                  <a href="./projeto/projetospessoais.html">Projetos realizados por mim</a>
+
+                  <a href="./projeto/projetosfimdecurso.html">Projetos de fim de curso realizados que achei interessantes</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Programação Web</a>
+                <div class="dropdown-content">
+                  <a href="#">Tecnologias existentes</a>
+                  <a href="#">Front-end</a>
+                  <a href="#">Back-end</a>
+                  <a href="#">Laboratórios</a>
+                  <a href="#">Noticias</a>
+                </div>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./sobre/sobre.html">Sobre</a></li>
+              <li><a href="contacto/contactos.html">Contacto</a></li>
+              <li><button id="dark-mode"><i class="fas fa-sun"></i></button></li>
+            </ul>
+          </nav>
+          
+
+
     </header>
-    <section class="hero">
-      <h1>London</h1>
-      <p>If at first you don't succeed, try, try again.</p>
+
+    <div class="video-background">
+        <div class="video-foreground">
+            <video autoplay muted loop>
+                <source src="/videos/background.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <p>Hoje é <span id="data-atual"></span>.</p>
+
+
+    <div class="motivational-text">
+        <p>"Aprender é uma jornada interminável. Mantenha-se curioso e nunca pare de explorar."</p>
+    </div>
+
+    <article>
+        <h1>Guilherme Simão</h1>
+        <p>Olá!, eu chamo-me Guilherme e tenho 19 anos, estou atualmente a tirar a Licenciatura de Engenharia Informática.</p>
+    </article>
+
+    <br>
+    <br>
+
+    <section>
+        <input id="expressao" type="text" placeholder="Insira uma expressão aritmética">
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="apagar()">Apagar resultado</button>
+        <p>Resultado: <span id="resultado"></span></p>
     </section>
-  </body>
+    
+    <div>
+        <img src="caminho/para/imagem.jpg" alt="Imagem inspiradora">
+        <input id="frase-inspiradora" type="text" placeholder="Escreva uma frase inspiradora">
+    </div>
+
+    <footer>
+        <p id="date"></p>
+        <p>Feito por <span id="name-footer"></span></p>
+    </footer>
+</body>
 </html>

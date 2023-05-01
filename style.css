@@ -1,86 +1,164 @@
-*{
-    font-family: Roboto, serif;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #f2f2f2;
+
+  }
+
+body.dark-mode {
+background-color: #333;
+color: #f2f2f2;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  nav ul {
+
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
     display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .hero {
-    height: 100vh;
-    background-image: url('imagens/londres.png');
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos CSS para o artigo */
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Estilos CSS para o texto motivacional */
+.motivational-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    padding: 2rem;
-  }
-  
-  .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 2rem;
-  }
-  
-  .about {
-    padding: 2rem;
-  }
-  
-  .contact {
-    padding: 2rem;
-  }
+    font-size: 48px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px #000;
+}
 
-  @media screen and (max-width: 768px) {
+/* Estilos CSS para o background de vídeo */
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
 
-    nav li {
-      display: block;
-      margin: 1rem 0;
-    }
-  
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    .hero p {
-      font-size: 1.5rem;
-    }
-  
-    .about, .contact {
-      padding: 1rem;
-    }
-  
-  }
+.video-foreground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
 
-  
-  
-  
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+article {
+background-color: transparent;
+margin: 50px auto;
+max-width: 800px;
+color: #fff;
+
+
+}
+
+article h3 {
+font-size: 32px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+article p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+article p:last-of-type {
+margin-bottom: 0;
+}
+
+
+table {
+    position:absolute;
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

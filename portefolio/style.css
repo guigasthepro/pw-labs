@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 16px;
+    color: #f2f2f2;
+
   }
 
 body.dark-mode {
@@ -137,4 +139,26 @@ margin-bottom: 20px;
 
 article p:last-of-type {
 margin-bottom: 0;
+}
+
+
+table {
+    position:absolute;
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }

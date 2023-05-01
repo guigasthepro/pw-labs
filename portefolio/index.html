@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Portefólio - Guilherme simão</title>
-    <script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -33,9 +33,11 @@
               <li class="dropdown">
                 <a href="#" class="dropbtn">Experiência profissional</a>
                 <div class="dropdown-content">
-                  <a href="#">Projetos realizados em diversas UCs</a>
-                  <a href="#">Projetos realizados por mim</a>
-                  <a href="#">Projetos de fim de curso realizados que achei interessantes</a>
+                  <a href="./projeto/projetosescola.html">Projetos realizados em diversas UCs</a>
+                  
+                  <a href="./projeto/projetospessoais.html">Projetos realizados por mim</a>
+
+                  <a href="./projeto/projetosfimdecurso.html">Projetos de fim de curso realizados que achei interessantes</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -45,12 +47,12 @@
                   <a href="#">Front-end</a>
                   <a href="#">Back-end</a>
                   <a href="#">Laboratórios</a>
+                  <a href="#">Noticias</a>
                 </div>
               </li>
-              <li><a href="#">Notícias</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Sobre este website</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="./sobre/sobre.html">Sobre</a></li>
+              <li><a href="contacto/contactos.html">Contacto</a></li>
               <li><button id="dark-mode"><i class="fas fa-sun"></i></button></li>
             </ul>
           </nav>
@@ -62,7 +64,7 @@
     <div class="video-background">
         <div class="video-foreground">
             <video autoplay muted loop>
-                <source src="videos/background.mp4" type="video/mp4">
+                <source src="/portefolio/videos/background.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -75,9 +77,12 @@
     </div>
 
     <article>
-        <h1>Sua Carta de Apresentação</h1>
-        <p>Olá! Meu nome é <span id="name"></span> e sou estudante de [seu curso]. Escolhi este curso porque [suas motivações para escolher o curso]. Até agora, o que mais tenho gostado de aprender no curso é [o que você mais gosta de aprender no curso]. Alguns dos meus pontos fortes incluem [suas qualidades]. Quando terminar o curso, gostaria de [suas expectativas para o futuro]. Nos meus tempos livres, gosto de [seus hobbies].</p>
+        <h1>Guilherme Simão</h1>
+        <p>Olá!, eu chamo-me Guilherme e tenho 19 anos, estou atualmente a tirar a Licenciatura de Engenharia Informática.</p>
     </article>
+
+    <br>
+    <br>
 
     <section>
         <input id="expressao" type="text" placeholder="Insira uma expressão aritmética">
@@ -85,7 +90,7 @@
         <button onclick="apagar()">Apagar resultado</button>
         <p>Resultado: <span id="resultado"></span></p>
     </section>
-
+    
     <div>
         <img src="caminho/para/imagem.jpg" alt="Imagem inspiradora">
         <input id="frase-inspiradora" type="text" placeholder="Escreva uma frase inspiradora">
