@@ -1,0 +1,60 @@
+<!-- base.html -->
+<body>
+    <header>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+        <script src="{% static 'js/script.js' %}"></script>
+
+
+    <nav>
+        <ul>
+          <li><a href="{% url 'portefolio:home' %}">Home Page</a></li>
+
+          <li class="dropdown">
+            <a  class="dropbtn">Sobre Mim</a>
+            <div class="dropdown-content">
+              <a href="#" class="dropbtn">Licenciatura</a>
+              <a href="#" class="dropbtn">Aptidões e competências pessoais</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Experiência profissional</a>
+            <div class="dropdown-content">
+              <a href="{% url 'portefolio:projetosescola' %}">Projetos realizados em diversas UCs</a>
+
+              <a href="{% url 'portefolio:projetospessoais' %}">Projetos realizados por mim</a>
+
+              <a href="{% url 'portefolio:projetocurso' %}">Projetos de fim de curso realizados que achei interessantes</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Programação Web</a>
+            <div class="dropdown-content">
+              <a href="#">Tecnologias existentes</a>
+              <a href="#">Front-end</a>
+              <a href="#">Back-end</a>
+              <a href="#">Laboratórios</a>
+              <a href="#">Noticias</a>
+            </div>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="{% url 'portefolio:sobre' %}">Sobre</a></li>
+          <li><a href="{% url 'portefolio:contacto' %}">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- base.html -->
+    ...
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+    <footer>
+        <div class="footer-center">
+            910938701 - Guilherme Simão - 2023 -  Universidade Lusófona
+        </div>
+            {% load static %}
+            <img width="30px" height="30px" src="{% static 'images/lusofonasmall.png' %}">
+    </footer>
+</body>
